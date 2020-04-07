@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import BusinessList from "./BusinessList/BusinessList.js"
-import SearchBar from "./SearchBar/SearchBar.js"
+import BusinessList from "../Business/Business.js";
+import SearchBar from "../SearchBar/SearchBar.js";
 
-function App() {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
@@ -13,7 +13,7 @@ function App() {
         <BusinessList />
       </div>
     );
-  };
-};
+  }
+}
 
 export default App;
