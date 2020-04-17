@@ -7,7 +7,7 @@ class BusinessList extends React.Component {
     return (
       <div className="BusinessList">
         {this.props.businesses.map(function BusinessCallback(business) {
-          return <Business business={business} />;
+          return <Business key={business.id} business={business} />;
         })}
       </div>
     );
